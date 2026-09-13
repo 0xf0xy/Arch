@@ -1,15 +1,13 @@
 <h1 align="center">ARCH</h1>
 
 <p align="center">
-  <em>Experimental Autoregressive Language Model</em>
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/python-3.10+-3776AB?style=flat&logo=python&logoColor=white" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white" alt="Keras">
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white" alt="TensorFlow">
   <img src="https://img.shields.io/badge/license-MIT-3DA639?style=flat" alt="MIT License">
 </p>
+
+> Experimental decoder-only Transformer for studying autoregressive language modeling and text generation.
 
 <br>
 
