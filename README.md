@@ -58,18 +58,14 @@ The model follows a decoder-only Transformer pipeline.
 
 ```mermaid
 flowchart TB
-
     A["Raw Text"]
     B["BPE Tokenizer"]
     C["Token IDs"]
     D["Token Embeddings"]
-    E["Transformer Decoder"]
-    F["Masked Self-Attention"]
-    G["Feed-Forward Network"]
-    H["Layer Normalization"]
-    I["Linear Projection"]
-    J["Vocabulary Logits"]
-    K["Next-Token Prediction"]
+    E["Decoder-Only Transformer"]
+    F["Linear Projection"]
+    G["Vocabulary Logits"]
+    H["Next-Token Prediction"]
 
     A --> B
     B --> C
@@ -78,10 +74,8 @@ flowchart TB
     E --> F
     F --> G
     G --> H
-    H --> I
-    I --> J
-    J --> K
-    K -.-> C
+
+    H -.-> C
 ```
 
 The dashed connection represents the autoregressive generation process: the predicted token becomes part of the context used to predict the following token.
